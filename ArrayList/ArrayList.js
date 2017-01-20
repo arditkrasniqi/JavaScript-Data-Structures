@@ -15,6 +15,14 @@ function ArrayList(){
         return array.length;
     }
 
+    //isEmpty method
+    this.isEmpty = function(){
+        if(array.length === 0){
+            return true;
+        }
+        return false;
+    }
+
     // adding elements to ArrayList
     this.add = function(val){
         if(val.trim() === ''){
